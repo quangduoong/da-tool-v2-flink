@@ -1,0 +1,4 @@
+rootProject.name = 'flink'
+include 'cdc'
+include 'common'
+
