@@ -21,6 +21,8 @@ public class BikeSalesCdcProcess {
         DataStream<CdcEvent> stream = env.fromSource(source, watermarkStrategy, "bike_sales_cdc_source");
         stream.print();
 
+        // todo
+
         env.execute("cdc_bike_sales");
     }
 }
